@@ -1,0 +1,26 @@
+{
+  "name": "dark-inferno",
+  "displayName": "Dark Inferno",
+  "description": "A dark theme with fiery red accents",
+  "version": "1.0.0",
+  "publisher": "physikinematic",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/physikinematic/Dark-Inferno-VSCode-Theme.git"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Dark Inferno",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Dark Inferno-color-theme.json"
+      }
+    ]
+  }
+}

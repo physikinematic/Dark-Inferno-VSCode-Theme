@@ -1,0 +1,39 @@
+name: Publish
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the code from the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Set up Node.js (required for VSCE)
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "22" # Use your desired Node.js version
+
+      # Install vsce (VS Code Extension CLI)
+      - name: Install VSCE
+        run: npm install -g @vscode/vsce
+
+      # Set up the secrets (for secure access to your publisher account)
+      - name: Set up VSCE credentials
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
+        run: echo "VSCE_PAT=${{ secrets.VSCE_PAT }}" >> $GITHUB_ENV
+
+      # Package the extension
+      - name: Package the extension
+        run: vsce package
+
+      # Publish the extension to the marketplace
+      - name: Publish the extension
+        run: vsce publish --pat ${{ secrets.VSCE_PAT }}
