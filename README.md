@@ -8,6 +8,7 @@
 - **High Contrast**: Optimized for readability with high-contrast elements.
 - **Fully Customizable**: Easily tweak the color scheme to your preference.
 - **UI Compatibility**: Perfectly blends with the default dark UI of VS Code.
+- **Vanilla Token Style**: Uses Visual Studio Code's vanilla dark theme's token style.
 
 ### 🖼️ Screenshots
 
