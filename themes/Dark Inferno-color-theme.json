@@ -1,7 +1,7 @@
 {
   "$schema": "vscode://schemas/color-theme",
   "name": "Dark Inferno",
-  "base": "vs-dark",
+  "base": "vs",
   "type": "dark",
   "colors": {
     "titleBar.activeBackground": "#000000",

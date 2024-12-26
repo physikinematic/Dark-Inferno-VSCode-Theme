@@ -2,7 +2,7 @@
   "name": "dark-inferno",
   "displayName": "Dark Inferno",
   "description": "A dark theme with fiery red accents",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "publisher": "physikinematic",
   "engines": {
     "vscode": "^1.80.0"
